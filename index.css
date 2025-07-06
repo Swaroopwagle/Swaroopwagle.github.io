@@ -1,14 +1,29 @@
- html {
-            scroll-behavior: smooth;
-        }
+.my-service {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #47475c;
+}
+.my-service i {
+  color: #ffae00;
+  font-size: 30px;
+}
+input::placeholder {
+  color: white;
+  font-weight: 700;
+}
 
-        .container {
-            width: 86%;
-
-            margin: auto;
-        }
-
-        .icon {
+textarea::placeholder {
+  color: white;
+  font-weight: 700;
+}
+.phone {
+  width: 91%;
+  margin: auto;
+}
+@media screen and (min-width: 1024px) {
+   .icon {
             padding: 10px;
             background-color: grey;
             display: flex;
@@ -57,3 +72,5 @@
         .nav-bar {
             background-color: #0b0917;
         }
+}
+/* responsiveness for the the styles css  */

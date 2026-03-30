@@ -1,0 +1,10 @@
+  a {
+                transition: all 0.2s ease-in-out;
+            }
+
+            /* Mobile menu support - keeps consistent colors */
+            @media (max-width: 768px) {
+                nav {
+                    background-color: var(--prussian-blue-hex);
+                }
+            }

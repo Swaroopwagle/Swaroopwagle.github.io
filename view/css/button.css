@@ -1,0 +1,186 @@
+/* =========================================================
+   BUTTON VARIANTS - Based on your color palette
+   ========================================================= */
+
+/* Base Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Large button variant */
+.btn-lg {
+    padding: 1rem 2.25rem;
+}
+
+/* Medium button variant */
+.btn-md {
+    padding: 0.75rem 1.75rem;
+}
+
+/* Small button variant */
+.btn-sm {
+    padding: 0.5rem 1.25rem;
+}
+
+/* =========================================================
+   PRIMARY BUTTON - Gradient from Royal Blue to Platinum
+   ========================================================= */
+.btn-primary {
+    background: linear-gradient(135deg, var(--royal-blue-hex), var(--platinum-hex));
+    color: var(--ink-black-hex);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--royal-blue-light, #3b82f6), var(--platinum-light, #f3f4f6));
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* =========================================================
+   SECONDARY BUTTON - Outline with Royal Blue border
+   ========================================================= */
+.btn-secondary {
+    background: transparent;
+    color: var(--royal-blue-hex);
+    border: 2px solid var(--royal-blue-hex);
+}
+
+.btn-secondary:hover {
+    background: var(--royal-blue-hex);
+    color: var(--platinum-hex);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+/* =========================================================
+   TERTIARY BUTTON - Ghost button with no background
+   ========================================================= */
+.btn-tertiary {
+    background: transparent;
+    color: var(--platinum-hex);
+    border: 1px solid var(--border-light, rgba(37, 99, 235, 0.3));
+}
+
+.btn-tertiary:hover {
+    background: rgba(37, 99, 235, 0.1);
+    border-color: var(--royal-blue-hex);
+    color: var(--royal-blue-hex);
+}
+
+/* =========================================================
+   ADDITIONAL VARIANTS
+   ========================================================= */
+
+/* Danger Button - Electric Red */
+.btn-danger {
+    background: var(--electric-red-hex);
+    color: var(--platinum-hex);
+}
+
+.btn-danger:hover {
+    background: var(--electric-red-dark, #e61a0c);
+    box-shadow: 0 4px 15px rgba(255, 45, 32, 0.3);
+}
+
+/* Success Button - Using Royal Blue variant */
+.btn-success {
+    background: var(--royal-blue-hex);
+    color: var(--platinum-hex);
+}
+
+.btn-success:hover {
+    background: var(--royal-blue-dark, #1d4ed8);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Outline Button - White outline */
+.btn-outline-light {
+    background: transparent;
+    color: var(--platinum-hex);
+    border: 2px solid var(--platinum-hex);
+}
+
+.btn-outline-light:hover {
+    background: var(--platinum-hex);
+    color: var(--ink-black-hex);
+}
+
+/* Glass Button - With blur effect */
+.btn-glass {
+    background: rgba(18, 26, 43, 0.6);
+    backdrop-filter: blur(10px);
+    color: var(--platinum-hex);
+    border: 1px solid rgba(37, 99, 235, 0.3);
+}
+
+.btn-glass:hover {
+    background: rgba(37, 99, 235, 0.2);
+    border-color: var(--royal-blue-hex);
+}
+
+/* Disabled state */
+.btn:disabled,
+.btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn:disabled:hover,
+.btn.disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Full width button */
+.btn-block {
+    width: 100%;
+    display: flex;
+}
+
+/* Icon button */
+.btn-icon {
+    padding: 0.75rem;
+    border-radius: 50%;
+}
+
+.btn-icon.btn-sm {
+    padding: 0.5rem;
+}
+
+.btn-icon.btn-lg {
+    padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .btn-md {
+        padding: 0.5rem 1.25rem;
+    }
+    
+    .btn-sm {
+        padding: 0.4rem 1rem;
+    }
+}

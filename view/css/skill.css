@@ -1,0 +1,157 @@
+ /* Animation Keyframes */
+            @keyframes fadeInLeft {
+                from {
+                    opacity: 0;
+                    transform: translateX(-50px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            @keyframes slideUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes zoomIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.8);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes slideIn {
+                from {
+                    opacity: 0;
+                    transform: translateX(-20px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            /* Animation Classes */
+            .animate-fade-in-left {
+                animation: fadeInLeft 0.8s ease-out forwards;
+            }
+
+            .animate-slide-up {
+                animation: slideUp 0.6s ease-out forwards;
+            }
+
+            .animate-fade-in-delay {
+                animation: fadeIn 0.8s ease-out 0.3s forwards;
+                opacity: 0;
+                animation-fill-mode: forwards;
+            }
+
+            .animate-slide-in {
+                animation: slideIn 0.5s ease-out forwards;
+            }
+
+            .animate-zoom-in {
+                opacity: 0;
+                animation: zoomIn 0.5s ease-out forwards;
+            }
+
+            /* Skill Card Hover Effects */
+            .skill-card {
+                transition: all 0.3s ease;
+            }
+
+            .skill-card:hover {
+                transform: translateY(-5px);
+            }
+
+            /* Optional: Add floating animation for cards on hover */
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(-5px);
+                }
+            }
+
+            .skill-card:hover .p-4 {
+                animation: float 0.3s ease-in-out;
+            }
+
+            /* Staggered animation delays */
+            .skill-card:nth-child(1) {
+                animation-delay: 0.1s;
+            }
+
+            .skill-card:nth-child(2) {
+                animation-delay: 0.15s;
+            }
+
+            .skill-card:nth-child(3) {
+                animation-delay: 0.2s;
+            }
+
+            .skill-card:nth-child(4) {
+                animation-delay: 0.25s;
+            }
+
+            .skill-card:nth-child(5) {
+                animation-delay: 0.3s;
+            }
+
+            .skill-card:nth-child(6) {
+                animation-delay: 0.35s;
+            }
+
+            .skill-card:nth-child(7) {
+                animation-delay: 0.4s;
+            }
+
+            .skill-card:nth-child(8) {
+                animation-delay: 0.45s;
+            }
+
+            .skill-card:nth-child(9) {
+                animation-delay: 0.5s;
+            }
+
+            .skill-card:nth-child(10) {
+                animation-delay: 0.55s;
+            }
+
+            .skill-card:nth-child(11) {
+                animation-delay: 0.6s;
+            }
+
+            .skill-card:nth-child(12) {
+                animation-delay: 0.65s;
+            }

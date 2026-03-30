@@ -1,0 +1,118 @@
+
+/* =========================================================
+   DARK THEME STYLES FOR BODY AND MAIN ELEMENTS
+   ========================================================= */
+
+body {
+    background-color: var(--prussian-blue-hex);
+    background-image: 
+        radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
+    color: var(--platinum-hex);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Optional: Add a subtle animated gradient overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.03), transparent);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Main content wrapper to ensure proper stacking */
+main {
+    position: relative;
+    z-index: 1;
+}
+
+/* Selection styling */
+::selection {
+    background-color: var(--royal-blue-hex);
+    color: var(--platinum-hex);
+}
+
+::-moz-selection {
+    background-color: var(--royal-blue-hex);
+    color: var(--platinum-hex);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--ink-black-hex);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--royal-blue-hex);
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--electric-red-hex);
+}
+
+/* Focus outline styling */
+:focus-visible {
+    outline: 2px solid var(--royal-blue-hex);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Link styling */
+a {
+    color: var(--platinum-hex);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--royal-blue-hex);
+}
+
+/* Paragraph text styling */
+p {
+    line-height: 1.6;
+    color: var(--platinum-hex);
+}
+
+/* Heading styling */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--platinum-hex);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Container for better content management */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+}
